@@ -1,0 +1,21 @@
+# RL
+rl:
+  hidden_dim: 512
+  batch_size: 4096
+  learning_rate: 0.0001
+  GAMMA: 0.99
+  TAU: 0.005
+
+# Training
+training:
+  warm_steps: 50000
+  total_steps: 500000
+  eval_interval: 10000
+
+# Agent
+agent:
+  round_num: 1
+  learning_side: 'Def'
+  defender_num: 3
+
+
