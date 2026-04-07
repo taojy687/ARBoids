@@ -1,0 +1,29 @@
+# RL
+rl:
+  hidden_dim: 512
+  batch_size: 4096
+  learning_rate: 0.0001
+  GAMMA: 0.99
+  TAU: 0.005
+
+# Training
+training:
+  model_name: 'adares.pth'
+  warm_steps: 50000
+  total_steps: 1000000
+  eval_interval: 5000
+
+# Agent
+agent:
+  defender_num: 3
+  curriculum: True
+  residual: True
+  adaptive: True
+  boid_state: True
+  form_reward: True
+
+# Curriculum Learning
+curriculum:
+  init_agility: 2.0
+  eva_agility: 2.0
+  ind_agility: 0.25
